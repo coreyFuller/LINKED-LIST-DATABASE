@@ -45,7 +45,12 @@ public:
   void pop_front();
   void makeReport();
   bool isEmpty();
+  ~LinkedList();
 };
+
+
+
+
 
 
 #endif

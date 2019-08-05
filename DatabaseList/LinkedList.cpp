@@ -12,6 +12,23 @@ LinkedList::LinkedList(string cmd) {
   output.open(cmd);
 }
 
+LinkedList::~LinkedList() {
+
+  Node * temp;
+  cout << "Deleting Database" << endl;
+  if(head == NULL) {
+    cout << "Database already empty!" << endl;
+  }
+  else {
+    while(head){
+      temp = head;
+      head = head->next;
+      free(temp);
+}
+    cout << "Database empty!" << endl;
+  }
+}
+
 void LinkedList::makeReport() {
 
   Node * temp = head;
@@ -98,7 +115,6 @@ void LinkedList::max() {
     }
     temp = temp->next;
   }
-  cout << maxSale << endl;
 }
 
 void LinkedList::min() {
@@ -114,7 +130,6 @@ void LinkedList::min() {
     }
     temp = temp->next;
   }
-  cout << minSale << endl;
 }
 
 void LinkedList::pop_front() {
