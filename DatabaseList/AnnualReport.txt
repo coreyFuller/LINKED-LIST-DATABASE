@@ -32,4 +32,4 @@ Average Annual Sales: $9730.75
 
 All employees earnings greater than the average are to recieve a five percent bonus on next pay period 
 	Worker(Bonus): Kahn
-	Worker(Bonus): Willaims
+	Worker(Bonus): Williams
